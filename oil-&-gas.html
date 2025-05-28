@@ -1,429 +1,787 @@
 <!DOCTYPE html>
 <html lang="en">
-
-    <head>
-        <meta charset="utf-8">
-        <title>LifeSure - Life Insurance Website Template</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="" name="keywords">
-        <meta content="" name="description">
-
-        <!-- Google Web Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:slnt,wght@-10..0,100..900&display=swap" rel="stylesheet">
-
-        <!-- Icon Font Stylesheet -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-        <!-- Libraries Stylesheet -->
-        <link rel="stylesheet" href="lib/animate/animate.min.css"/>
-        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-
-
-        <!-- Customized Bootstrap Stylesheet -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-
-        <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-
-    <body>
-
-        <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hermitage Oil & Gas</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: "#0f2a47", secondary: "#ff6b35" },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      :where([class^="ri-"])::before { content: "\f3c2"; }
+      body {
+      font-family: 'Inter', sans-serif;
+      }
+      .hero-section {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://readdy.ai/api/search-image?query=Industrial%20oil%20and%20gas%20refinery%20with%20large%20metallic%20structures%2C%20pipes%2C%20and%20towers%20against%20a%20dramatic%20sky.%20The%20image%20should%20show%20a%20modern%20petroleum%20processing%20facility%20with%20clear%20details%20of%20the%20industrial%20architecture.%20The%20lighting%20should%20create%20a%20professional%20and%20impressive%20atmosphere%2C%20suitable%20for%20a%20corporate%20website.&width=1920&height=800&seq=1&orientation=landscape');
+      background-size: cover;
+      background-position: center;
+      }
+      .experience-section {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://readdy.ai/api/search-image?query=Wide%20panoramic%20view%20of%20an%20oil%20and%20gas%20industrial%20complex%20with%20multiple%20processing%20units%20and%20storage%20tanks%20stretching%20across%20the%20horizon.%20The%20image%20should%20depict%20a%20vast%20energy%20infrastructure%20with%20clear%20blue%20sky%2C%20showing%20the%20scale%20and%20complexity%20of%20modern%20petroleum%20operations.%20Perfect%20for%20a%20corporate%20website%20banner.&width=1920&height=600&seq=2&orientation=landscape');
+      background-size: cover;
+      background-position: center;
+      }
+      .testimonial-section {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://readdy.ai/api/search-image?query=Panoramic%20view%20of%20oil%20and%20gas%20field%20with%20drilling%20rigs%20and%20equipment%20at%20sunset%20or%20sunrise%2C%20creating%20a%20golden%20light%20across%20the%20industrial%20landscape.%20The%20image%20should%20show%20the%20vast%20scale%20of%20energy%20operations%20with%20mountains%20in%20the%20background%20and%20a%20dramatic%20sky.&width=1920&height=600&seq=3&orientation=landscape');
+      background-size: cover;
+      background-position: center;
+      }
+      .progress-bar {
+      height: 8px;
+      border-radius: 4px;
+      background-color: #e5e7eb;
+      overflow: hidden;
+      }
+      .progress-value {
+      height: 100%;
+      border-radius: 4px;
+      background-color: #ff6b35;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-primary text-white">
+      <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+        <div class="flex items-center">
+          <div class="text-2xl font-Ariel mr-10">HERMITAGE OIL & GAS</div>
+          <nav class="hidden md:flex space-x-6">
+            <a href="index.html" class="px-2 py-1 hover:text-secondary">
+              <i class="ri-arrow-left-line"></i> Back to Main Site
+            </a>
+            <a href="#about" class="px-2 py-1 hover:text-secondary">About</a>
+            <a href="#services" class="px-2 py-1 hover:text-secondary">Services</a>
+            <a href="#projects" class="px-2 py-1 hover:text-secondary">Projects</a>
+            <a href="#"
+              class="px-2 py-1 hover:text-secondary"
+              onclick="showContactModal(event)">Contact</a>
+          </nav>
         </div>
-        <!-- Spinner End -->
-
-        <!-- Topbar Start -->
-        <div class="container-fluid topbar px-0 px-lg-4 bg-light py-2 d-none d-lg-block">
-            <div class="container">
-                <div class="row gx-0 align-items-center">
-                    <div class="col-lg-8 text-center text-lg-start mb-lg-0">
-                        <div class="d-flex flex-wrap">
-                            <div class="border-end border-primary pe-3">
-                                <a href="#" class="text-muted small"><i class="fas fa-map-marker-alt text-primary me-2"></i>Find A Location</a>
-                            </div>
-                            <div class="ps-3">
-                                <a href="mailto:example@gmail.com" class="text-muted small"><i class="fas fa-envelope text-primary me-2"></i>example@gmail.com</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 text-center text-lg-end">
-                        <div class="d-flex justify-content-end">
-                            <div class="d-flex border-end border-primary pe-3">
-                                <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-instagram"></i></a>
-                                <a class="btn p-0 text-primary me-0" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                            <div class="dropdown ms-3">
-                                <a href="#" class="dropdown-toggle text-dark" data-bs-toggle="dropdown"><small><i class="fas fa-globe-europe text-primary me-2"></i> English</small></a>
-                                <div class="dropdown-menu rounded">
-                                    <a href="#" class="dropdown-item">English</a>
-                                    <a href="#" class="dropdown-item">Bangla</a>
-                                    <a href="#" class="dropdown-item">French</a>
-                                    <a href="#" class="dropdown-item">Spanish</a>
-                                    <a href="#" class="dropdown-item">Arabic</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <div class="flex items-center">
+          <div
+            class="w-10 h-10 flex items-center justify-center text-white mr-2"
+          >
+            <i class="ri-search-line ri-lg"></i>
+          </div>
+          <button
+            class="bg-secondary text-white px-4 py-2 !rounded-button whitespace-nowrap"
+          >
+            Get a Quote
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section text-white py-20">
+      <div class="container mx-auto px-4">
+        <div class="max-w-2xl">
+          <h1 class="text-4xl md:text-5xl font-bold mb-6">
+            DISCOVER VITAL OIL AND NATURAL GAS RESOURCES
+          </h1>
+          <p class="text-lg mb-8">
+            We provide comprehensive solutions for oil and gas exploration,
+            production, and distribution with cutting-edge technology and
+            experienced professionals.
+          </p>
+          <button
+            class="bg-secondary text-white px-6 py-3 font-medium !rounded-button whitespace-nowrap"
+          >
+            Discover More
+          </button>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
+          <div class="bg-white p-6 rounded">
+            <h3 class="text-primary text-xl font-bold mb-2">EXPERT TEAM</h3>
+            <p class="text-gray-700">
+              Our team consists of industry professionals with decades of
+              combined experience in oil and gas operations.
+            </p>
+          </div>
+          <div class="bg-primary p-6 rounded text-white">
+            <h3 class="text-xl font-bold mb-2">MODERN EQUIPMENT</h3>
+            <p>
+              We utilize state-of-the-art equipment and technologies to ensure
+              efficient and safe operations.
+            </p>
+            <div class="mt-4">
+              <button class="text-secondary font-medium flex items-center">
+                Learn More
+                <div class="w-5 h-5 flex items-center justify-center ml-2">
+                  <i class="ri-arrow-right-line"></i>
                 </div>
+              </button>
             </div>
+          </div>
+          <div class="bg-white p-6 rounded">
+            <h3 class="text-primary text-xl font-bold mb-2">REQUEST A QUOTE</h3>
+            <form>
+              <input
+                type="email"
+                placeholder="Your Email"
+                class="w-full p-3 mb-3 border-none bg-gray-100 rounded text-sm"
+              />
+              <button
+                class="bg-secondary text-white w-full py-3 !rounded-button whitespace-nowrap"
+              >
+                Submit Request
+              </button>
+            </form>
+          </div>
         </div>
-        <!-- Topbar End -->
-
-        <!-- Navbar & Hero Start -->
-        <div class="container-fluid nav-bar px-0 px-lg-4 py-lg-0">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light"> 
-                    <a href="#" class="navbar-brand p-0">
-                        <h1 class="text-primary mb-0"><i class="fab fa-slack me-2"></i> LifeSure</h1>
-                        <!-- <img src="img/logo.png" alt="Logo"> -->
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                        <span class="fa fa-bars"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarCollapse">
-                        <div class="navbar-nav mx-0 mx-lg-auto">
-                            <a href="index.html" class="nav-item nav-link">Home</a>
-                            <a href="about.html" class="nav-item nav-link">About</a>
-                            <a href="service.html" class="nav-item nav-link">Services</a>
-                            <a href="blog.html" class="nav-item nav-link">Blog</a>
-                            <div class="nav-item dropdown active">
-                                <a href="#" class="nav-link" data-bs-toggle="dropdown">
-                                    <span class="dropdown-toggle">Pages</span>
-                                </a>
-                                <div class="dropdown-menu">
-                                    <a href="feature.html" class="dropdown-item active">Our Features</a>
-                                    <a href="team.html" class="dropdown-item">Our team</a>
-                                    <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                    <a href="FAQ.html" class="dropdown-item">FAQs</a>
-                                    <a href="404.html" class="dropdown-item">404 Page</a>
-                                </div>
-                            </div>
-                            <a href="contact.html" class="nav-item nav-link">Contact</a>
-                            <div class="nav-btn px-3">
-                                <button class="btn-search btn btn-primary btn-md-square rounded-circle flex-shrink-0" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
-                                <a href="#" class="btn btn-primary rounded-pill py-2 px-4 ms-3 flex-shrink-0"> Get a Quote</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-none d-xl-flex flex-shrink-0 ps-4">
-                        <a href="#" class="btn btn-light btn-lg-square rounded-circle position-relative wow tada" data-wow-delay=".9s">
-                            <i class="fa fa-phone-alt fa-2x"></i>
-                            <div class="position-absolute" style="top: 7px; right: 12px;">
-                                <span><i class="fa fa-comment-dots text-secondary"></i></span>
-                            </div>
-                        </a>
-                        <div class="d-flex flex-column ms-3">
-                            <span>Call to Our Experts</span>
-                            <a href="tel:+ 0123 456 7890"><span class="text-dark">Free: + 0123 456 7890</span></a>
-                        </div>
-                    </div>
-                </nav>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="py-16">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row items-center gap-10">
+          <div class="md:w-1/2">
+            <h2 class="text-3xl font-bold text-primary mb-6">
+              WE ARE THE BEST OIL AND GAS COMPANY
+            </h2>
+            <p class="text-gray-700 mb-6">
+              With over 25 years of experience in the industry, we have
+              established ourselves as a leader in oil and gas exploration,
+              production, and distribution. Our commitment to excellence,
+              safety, and environmental responsibility sets us apart from our
+              competitors.
+            </p>
+            <div class="flex items-center mb-8">
+              <div
+                class="w-12 h-12 flex items-center justify-center bg-secondary rounded-full text-white mr-4"
+              >
+                <i class="ri-check-line ri-lg"></i>
+              </div>
+              <div>
+                <h4 class="text-lg font-bold text-primary">
+                  Certified Professionals
+                </h4>
+                <p class="text-gray-600">
+                  Our team consists of certified experts in the field
+                </p>
+              </div>
             </div>
+            <button
+              class="bg-secondary text-white px-6 py-3 !rounded-button whitespace-nowrap"
+            >
+              Learn More
+            </button>
+          </div>
+          <div class="md:w-1/2 grid grid-cols-2 gap-4">
+            <div class="bg-primary text-white p-6 rounded">
+              <div class="text-4xl font-bold mb-2">15</div>
+              <p>Years of Experience</p>
+            </div>
+            <div class="bg-white shadow p-6 rounded">
+              <div class="text-4xl font-bold text-secondary mb-2">250+</div>
+              <p class="text-gray-700">Projects Completed</p>
+            </div>
+            <div class="bg-white shadow p-6 rounded">
+              <div class="text-4xl font-bold text-secondary mb-2">50+</div>
+              <p class="text-gray-700">Team Members</p>
+            </div>
+            <div class="bg-primary text-white p-6 rounded">
+              <div class="text-4xl font-bold mb-2">24/7</div>
+              <p>Customer Support</p>
+            </div>
+          </div>
         </div>
-        <!-- Navbar & Hero End -->
-
-        <!-- Modal Search Start -->
-        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-fullscreen">
-                <div class="modal-content rounded-0">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body d-flex align-items-center bg-primary">
-                        <div class="input-group w-75 mx-auto d-flex">
-                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
-                            <span id="search-icon-1" class="btn bg-light border nput-group-text p-3"><i class="fa fa-search"></i></span>
-                        </div>
-                    </div>
+      </div>
+    </section>
+    <!-- Experience Section -->
+    <section class="experience-section text-white py-16">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold mb-4">
+            EXPERIENCE WORK WITH GLOBAL INDUSTRIES
+          </h2>
+          <p class="max-w-2xl mx-auto">
+            We collaborate with leading companies worldwide to deliver
+            exceptional oil and gas solutions that meet the highest industry
+            standards.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <div>
+            <h3 class="text-2xl font-bold mb-6">WHY CHOOSE US?</h3>
+            <div class="mb-6">
+              <div class="flex items-center mb-2">
+                <div
+                  class="w-10 h-10 flex items-center justify-center bg-secondary rounded-full text-white mr-4"
+                >
+                  <i class="ri-shield-check-line ri-lg"></i>
                 </div>
+                <h4 class="text-lg font-bold">Safety First Approach</h4>
+              </div>
+              <p class="pl-14">
+                We prioritize the safety of our employees, clients, and the
+                environment in all our operations.
+              </p>
             </div>
-        </div>
-        <!-- Modal Search End -->
-
-
-        <!-- Header Start -->
-        <div class="container-fluid bg-breadcrumb">
-            <div class="container text-center py-5" style="max-width: 900px;">
-                <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Our Features</h4>
-                <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                    <li class="breadcrumb-item active text-primary">Feature</li>
-                </ol>    
-            </div>
-        </div>
-        <!-- Header End -->
-
-
-        <!-- Feature Start -->
-        <div class="container-fluid feature bg-light py-5">
-            <div class="container py-5">
-                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                    <h4 class="text-primary">Our Features</h4>
-                    <h1 class="display-4 mb-4">Insurance Provide you a Better Future</h1>
-                    <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur adipisci facilis cupiditate recusandae aperiam temporibus corporis itaque quis facere, numquam, ad culpa deserunt sint dolorem autem obcaecati, ipsam mollitia hic.
-                    </p>
+            <div class="mb-6">
+              <div class="flex items-center mb-2">
+                <div
+                  class="w-10 h-10 flex items-center justify-center bg-secondary rounded-full text-white mr-4"
+                >
+                  <i class="ri-award-line ri-lg"></i>
                 </div>
-                <div class="row g-4">
-                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="feature-item p-4 pt-0">
-                            <div class="feature-icon p-4 mb-4">
-                                <i class="far fa-handshake fa-3x"></i>
-                            </div>
-                            <h4 class="mb-4">Trusted Company</h4>
-                            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea hic laborum odit pariatur...
-                            </p>
-                            <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="feature-item p-4 pt-0">
-                            <div class="feature-icon p-4 mb-4">
-                                <i class="fa fa-dollar-sign fa-3x"></i>
-                            </div>
-                            <h4 class="mb-4">Anytime Money Back</h4>
-                            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea hic laborum odit pariatur...
-                            </p>
-                            <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="feature-item p-4 pt-0">
-                            <div class="feature-icon p-4 mb-4">
-                                <i class="fa fa-bullseye fa-3x"></i>
-                            </div>
-                            <h4 class="mb-4">Flexible Plans</h4>
-                            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea hic laborum odit pariatur...
-                            </p>
-                            <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
-                        <div class="feature-item p-4 pt-0">
-                            <div class="feature-icon p-4 mb-4">
-                                <i class="fa fa-headphones fa-3x"></i>
-                            </div>
-                            <h4 class="mb-4">24/7 Fast Support</h4>
-                            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea hic laborum odit pariatur...
-                            </p>
-                            <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
-                        </div>
-                    </div>
-                </div>
+                <h4 class="text-lg font-bold">Quality Assurance</h4>
+              </div>
+              <p class="pl-14">
+                Our rigorous quality control processes ensure that we deliver
+                excellence in every project.
+              </p>
             </div>
-        </div>
-        <!-- Feature End -->
-
-
-        <!-- Footer Start -->
-        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
-            <div class="container py-5">
-                <div class="row g-5">
-                    <div class="col-xl-9">
-                        <div class="mb-5">
-                            <div class="row g-4">
-                                <div class="col-md-6 col-lg-6 col-xl-5">
-                                    <div class="footer-item">
-                                        <a href="index.html" class="p-0">
-                                            <h3 class="text-white"><i class="fab fa-slack me-3"></i> LifeSure</h3>
-                                            <!-- <img src="img/logo.png" alt="Logo"> -->
-                                        </a>
-                                        <p class="text-white mb-4">Dolor amet sit justo amet elitr clita ipsum elitr est.Lorem ipsum dolor sit amet, consectetur adipiscing...</p>
-                                        <div class="footer-btn d-flex">
-                                            <a class="btn btn-md-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f"></i></a>
-                                            <a class="btn btn-md-square rounded-circle me-3" href="#"><i class="fab fa-twitter"></i></a>
-                                            <a class="btn btn-md-square rounded-circle me-3" href="#"><i class="fab fa-instagram"></i></a>
-                                            <a class="btn btn-md-square rounded-circle me-0" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-lg-6 col-xl-3">
-                                    <div class="footer-item">
-                                        <h4 class="text-white mb-4">Useful Links</h4>
-                                        <a href="#"><i class="fas fa-angle-right me-2"></i> About Us</a>
-                                        <a href="#"><i class="fas fa-angle-right me-2"></i> Features</a>
-                                        <a href="#"><i class="fas fa-angle-right me-2"></i> Services</a>
-                                        <a href="#"><i class="fas fa-angle-right me-2"></i> FAQ's</a>
-                                        <a href="#"><i class="fas fa-angle-right me-2"></i> Blogs</a>
-                                        <a href="#"><i class="fas fa-angle-right me-2"></i> Contact</a>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-lg-6 col-xl-4">
-                                    <div class="footer-item">
-                                        <h4 class="mb-4 text-white">Instagram</h4>
-                                        <div class="row g-3">
-                                            <div class="col-4">
-                                                <div class="footer-instagram rounded">
-                                                    <img src="img/instagram-footer-1.jpg" class="img-fluid w-100" alt="">
-                                                    <div class="footer-search-icon">
-                                                        <a href="img/instagram-footer-1.jpg" data-lightbox="footerInstagram-1" class="my-auto"><i class="fas fa-link text-white"></i></a>
-                                                    </div>
-                                                </div>
-                                           </div>
-                                           <div class="col-4">
-                                                <div class="footer-instagram rounded">
-                                                    <img src="img/instagram-footer-2.jpg" class="img-fluid w-100" alt="">
-                                                    <div class="footer-search-icon">
-                                                        <a href="img/instagram-footer-2.jpg" data-lightbox="footerInstagram-2" class="my-auto"><i class="fas fa-link text-white"></i></a>
-                                                    </div>
-                                                </div>
-                                           </div>
-                                            <div class="col-4">
-                                                <div class="footer-instagram rounded">
-                                                    <img src="img/instagram-footer-3.jpg" class="img-fluid w-100" alt="">
-                                                    <div class="footer-search-icon">
-                                                        <a href="img/instagram-footer-3.jpg" data-lightbox="footerInstagram-3" class="my-auto"><i class="fas fa-link text-white"></i></a>
-                                                    </div>
-                                                </div>
-                                           </div>
-                                            <div class="col-4">
-                                                <div class="footer-instagram rounded">
-                                                    <img src="img/instagram-footer-4.jpg" class="img-fluid w-100" alt="">
-                                                    <div class="footer-search-icon">
-                                                        <a href="img/instagram-footer-4.jpg" data-lightbox="footerInstagram-4" class="my-auto"><i class="fas fa-link text-white"></i></a>
-                                                    </div>
-                                                </div>
-                                           </div>
-                                            <div class="col-4">
-                                                <div class="footer-instagram rounded">
-                                                    <img src="img/instagram-footer-5.jpg" class="img-fluid w-100" alt="">
-                                                    <div class="footer-search-icon">
-                                                        <a href="img/instagram-footer-5.jpg" data-lightbox="footerInstagram-5" class="my-auto"><i class="fas fa-link text-white"></i></a>
-                                                    </div>
-                                                </div>
-                                           </div>
-                                           <div class="col-4">
-                                                <div class="footer-instagram rounded">
-                                                    <img src="img/instagram-footer-6.jpg" class="img-fluid w-100" alt="">
-                                                    <div class="footer-search-icon">
-                                                        <a href="img/instagram-footer-6.jpg" data-lightbox="footerInstagram-6" class="my-auto"><i class="fas fa-link text-white"></i></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pt-5" style="border-top: 1px solid rgba(255, 255, 255, 0.08);">
-                            <div class="row g-0">
-                                <div class="col-12">
-                                    <div class="row g-4">
-                                        <div class="col-lg-6 col-xl-4">
-                                            <div class="d-flex">
-                                                <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
-                                                    <i class="fas fa-map-marker-alt fa-2x"></i>
-                                                </div>
-                                                <div>
-                                                    <h4 class="text-white">Address</h4>
-                                                    <p class="mb-0">123 Street New York.USA</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-xl-4">
-                                            <div class="d-flex">
-                                                <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
-                                                    <i class="fas fa-envelope fa-2x"></i>
-                                                </div>
-                                                <div>
-                                                    <h4 class="text-white">Mail Us</h4>
-                                                    <p class="mb-0">info@example.com</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-xl-4">
-                                            <div class="d-flex">
-                                                <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
-                                                    <i class="fa fa-phone-alt fa-2x"></i>
-                                                </div>
-                                                <div>
-                                                    <h4 class="text-white">Telephone</h4>
-                                                    <p class="mb-0">(+012) 3456 7890</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-xl-3">
-                        <div class="footer-item">
-                            <h4 class="text-white mb-4">Newsletter</h4>
-                            <p class="text-white mb-3">Dolor amet sit justo amet elitr clita ipsum elitr est.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <div class="position-relative rounded-pill mb-4">
-                                <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
-                                <button type="button" class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
-                            </div>
-                            <div class="d-flex flex-shrink-0">
-                                <div class="footer-btn">
-                                    <a href="#" class="btn btn-lg-square rounded-circle position-relative wow tada" data-wow-delay=".9s">
-                                        <i class="fa fa-phone-alt fa-2x"></i>
-                                        <div class="position-absolute" style="top: 2px; right: 12px;">
-                                            <span><i class="fa fa-comment-dots text-secondary"></i></span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="d-flex flex-column ms-3 flex-shrink-0">
-                                    <span>Call to Our Experts</span>
-                                    <a href="tel:+ 0123 456 7890"><span class="text-white">Free: + 0123 456 7890</span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div>
+              <div class="flex items-center mb-2">
+                <div
+                  class="w-10 h-10 flex items-center justify-center bg-secondary rounded-full text-white mr-4"
+                >
+                  <i class="ri-team-line ri-lg"></i>
                 </div>
+                <h4 class="text-lg font-bold">Expert Team</h4>
+              </div>
+              <p class="pl-14">
+                Our team of professionals brings decades of industry experience
+                to every challenge.
+              </p>
             </div>
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold mb-6">OUR EXPERTISE</h3>
+            <div class="mb-6">
+              <div class="flex justify-between mb-2">
+                <span>Oil Exploration</span>
+                <span>92%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-value" style="width: 92%"></div>
+              </div>
+            </div>
+            <div class="mb-6">
+              <div class="flex justify-between mb-2">
+                <span>Gas Production</span>
+                <span>85%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-value" style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="mb-6">
+              <div class="flex justify-between mb-2">
+                <span>Refinery Operations</span>
+                <span>78%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-value" style="width: 78%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-2">
+                <span>Distribution Network</span>
+                <span>90%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-value" style="width: 90%"></div>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- Footer End -->
-        
-        <!-- Copyright Start -->
-        <div class="container-fluid copyright py-4">
-            <div class="container">
-                <div class="row g-4 align-items-center">
-                    <div class="col-md-6 text-center text-md-end mb-md-0">
-                        <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>Your Site Name</a>, All right reserved.</span>
-                    </div>
-                    <div class="col-md-6 text-center text-md-start text-body">
-                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
-                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
-                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                        Designed By <a class="border-bottom text-white" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a class="border-bottom text-white" href="https://themewagon.com">ThemeWagon</a>
-                    </div>
+      </div>
+    </section>
+    <!-- Services Section -->
+    <section id="about" class="py-16">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row items-start gap-10">
+          <div class="md:w-1/3">
+            <h2 class="text-3xl font-bold text-primary mb-6">
+              WE PROVIDE BEST SERVICES
+            </h2>
+            <p class="text-gray-700 mb-6">
+              Our comprehensive range of services covers all aspects of the oil
+              and gas industry, from exploration to distribution, ensuring that
+              our clients receive the highest quality solutions.
+            </p>
+            <button
+              class="bg-secondary text-white px-6 py-3 !rounded-button whitespace-nowrap">View All Services</button>
+          </div>
+          <div class="md:w-2/3 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white shadow p-6 rounded">
+              <div
+                class="w-14 h-14 flex items-center justify-center bg-secondary/10 text-secondary rounded-lg mb-4"
+              >
+                <i class="ri-oil-line ri-2x"></i>
+              </div>
+              <h3 class="text-xl font-bold text-primary mb-2">
+                Oil Exploration
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Discover new oil reserves with our advanced exploration
+                techniques.
+              </p>
+              <button class="text-secondary font-medium flex items-center">
+                Read More
+                <div class="w-5 h-5 flex items-center justify-center ml-2">
+                  <i class="ri-arrow-right-line"></i>
                 </div>
+              </button>
             </div>
+            <div class="bg-secondary text-white p-6 rounded">
+              <div
+                class="w-14 h-14 flex items-center justify-center bg-white/20 rounded-lg mb-4"
+              >
+                <i class="ri-gas-station-line ri-2x"></i>
+              </div>
+              <h3 class="text-xl font-bold mb-2">Gas Production</h3>
+              <p class="mb-4">
+                Efficient and safe natural gas production and processing
+                services.
+              </p>
+              <button class="text-white font-medium flex items-center">
+                Read More
+                <div class="w-5 h-5 flex items-center justify-center ml-2">
+                  <i class="ri-arrow-right-line"></i>
+                </div>
+              </button>
+            </div>
+            <div class="bg-white shadow p-6 rounded">
+              <div
+                class="w-14 h-14 flex items-center justify-center bg-secondary/10 text-secondary rounded-lg mb-4"
+              >
+                <i class="ri-ship-line ri-2x"></i>
+              </div>
+              <h3 class="text-xl font-bold text-primary mb-2">
+                Transportation
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Reliable transportation solutions for oil and gas products.
+              </p>
+              <button class="text-secondary font-medium flex items-center">
+                Read More
+                <div class="w-5 h-5 flex items-center justify-center ml-2">
+                  <i class="ri-arrow-right-line"></i>
+                </div>
+              </button>
+            </div>
+          </div>
         </div>
-        <!-- Copyright End -->
+        <!-- Stats -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
+          <div class="text-center">
+            <div class="text-4xl font-bold text-primary mb-2">783</div>
+            <p class="text-gray-600">Projects Completed</p>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl font-bold text-primary mb-2">579</div>
+            <p class="text-gray-600">Satisfied Clients</p>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl font-bold text-primary mb-2">342</div>
+            <p class="text-gray-600">Expert Engineers</p>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl font-bold text-primary mb-2">25</div>
+            <p class="text-gray-600">Years Experience</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row gap-10">
+          <div class="md:w-1/3">
+            <img
+              src="https://readdy.ai/api/search-image?query=Close-up%20view%20of%20modern%20oil%20refinery%20equipment%20with%20detailed%20pipes%2C%20valves%2C%20and%20processing%20units.%20The%20image%20should%20showcase%20the%20industrial%20complexity%20and%20engineering%20precision%20of%20petroleum%20processing%20facilities.%20The%20lighting%20should%20be%20clear%20and%20professional%2C%20highlighting%20the%20metallic%20surfaces%20and%20technical%20components.&width=600&height=800&seq=4&orientation=portrait"
+              alt="Oil refinery equipment"
+              class="w-full h-auto rounded object-cover"
+            />
+          </div>
+          <div class="md:w-2/3">
+            <h2 class="text-3xl font-bold text-primary mb-6">
+              WE CONSTRUCTED A SECURE EXPERIENCE FOR YOU
+            </h2>
+            <p class="text-gray-700 mb-8">
+              Our projects are designed with safety, efficiency, and
+              environmental responsibility in mind. We leverage decades of
+              industry experience to deliver solutions that exceed expectations.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div class="bg-primary text-white p-6 rounded">
+                <h3 class="text-xl font-bold mb-2">OFFSHORE DRILLING</h3>
+                <p class="mb-4">
+                  Specialized offshore drilling operations with advanced safety
+                  protocols.
+                </p>
+                <button class="text-secondary font-medium flex items-center">
+                  View Details
+                  <div class="w-5 h-5 flex items-center justify-center ml-2">
+                    <i class="ri-arrow-right-line"></i>
+                  </div>
+                </button>
+              </div>
+              <div class="bg-white shadow p-6 rounded">
+                <h3 class="text-xl font-bold text-primary mb-2">
+                  PIPELINE SYSTEMS
+                </h3>
+                <p class="text-gray-600 mb-4">
+                  Comprehensive pipeline design, installation, and maintenance
+                  services.
+                </p>
+                <button class="text-secondary font-medium flex items-center">
+                  View Details
+                  <div class="w-5 h-5 flex items-center justify-center ml-2">
+                    <i class="ri-arrow-right-line"></i>
+                  </div>
+                </button>
+              </div>
+              <div class="bg-secondary text-white p-6 rounded">
+                <h3 class="text-xl font-bold mb-2">REFINERY OPERATIONS</h3>
+                <p class="mb-4">
+                  Modern refinery management with optimized production
+                  processes.
+                </p>
+                <button class="text-white font-medium flex items-center">
+                  View Details
+                  <div class="w-5 h-5 flex items-center justify-center ml-2">
+                    <i class="ri-arrow-right-line"></i>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonial Section -->
+    <section class="testimonial-section text-white py-16">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-12">
+          WE ARE ALWAYS READY TO SERVE YOU
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-4xl mx-auto">
+          <div class="bg-white/10 p-8 rounded backdrop-blur-sm">
+            <div class="text-4xl mb-4">"</div>
+            <p class="mb-6">
+              Petrol has been an invaluable partner in our offshore operations.
+              Their expertise and commitment to safety have helped us achieve
+              exceptional results while maintaining the highest environmental
+              standards.
+            </p>
+            <div class="flex items-center justify-center">
+              <div class="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
+              <div class="text-left">
+                <h4 class="font-bold">Robert Anderson</h4>
+                <p class="text-sm">Operations Director, Global Energy</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white/10 p-8 rounded backdrop-blur-sm">
+            <div class="text-4xl mb-4">"</div>
+            <p class="mb-6">
+              We've worked with many oil and gas service providers, but Petrol
+              stands out for their technical expertise, reliability, and
+              customer-focused approach. They consistently deliver beyond our
+              expectations.
+            </p>
+            <div class="flex items-center justify-center">
+              <div class="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
+              <div class="text-left">
+                <h4 class="font-bold">Emily Richardson</h4>
+                <p class="text-sm">CEO, Petrotech Industries</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- Footer -->
+<footer class="bg-primary text-white pt-16 pb-8">
+    <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">
+    <div>
+    <div class="flex items-center">
+        <div class="text-3xl font-Ariel ml-4">HERMITAGE OIL & GAS</div>
+    </div>
+    <p class="mb-6">Leading provider of comprehensive oil and gas solutions with a commitment to safety, quality, and environmental responsibility.</p>
+    <div class="flex space-x-4">
+    <a href="#" class="w-10 h-10 flex items-center justify-center bg-secondary/20 rounded-full">
+    <i class="ri-facebook-fill"></i>
+    </a>
+    <a href="#" class="w-10 h-10 flex items-center justify-center bg-secondary/20 rounded-full">
+    <i class="ri-twitter-fill"></i>
+    </a>
+    <a href="#" class="w-10 h-10 flex items-center justify-center bg-secondary/20 rounded-full">
+    <i class="ri-linkedin-fill"></i>
+    </a>
+    <a href="#" class="w-10 h-10 flex items-center justify-center bg-secondary/20 rounded-full">
+    <i class="ri-instagram-fill"></i>
+    </a>
+    </div>
+    </div>
+    <div>
+    <h3 class="text-xl font-bold mb-6">Quick Links</h3>
+    <ul class="space-y-3">
+    <li><a href="#about" class="hover:text-secondary">About Us</a></li>
+    <li><a href="#services" class="hover:text-secondary">Services</a></li>
+    <li><a href="#projects" class="hover:text-secondary">Projects</a></li>
+    <li><a href="#" class="hover:text-secondary" onclick="showContactModal(event)">Contact</a></li> 
+    </ul>
+    </div>
+    <div>
+    <h3 class="text-xl font-bold mb-6">Services</h3>
+    <ul class="space-y-3">
+    <li><a href="#" class="hover:text-secondary">Oil Exploration</a></li>
+    <li><a href="#" class="hover:text-secondary">Gas Production</a></li>
+    <li><a href="#" class="hover:text-secondary">Transportation</a></li>
+    <li><a href="#" class="hover:text-secondary">Refinery Operations</a></li>
+    <li><a href="#" class="hover:text-secondary">Consulting</a></li>
+    </ul>
+    </div>
+    <div>
+    <h3 class="text-xl font-bold mb-6">Contact Info</h3>
+    <ul class="space-y-4">
+    <li class="flex">
+    <div class="w-5 h-5 flex items-center justify-center mr-3 mt-1">
+    <i class="ri-map-pin-line"></i>
+    </div>
+    <span>Hermitage House <br>
+        Hermitage Road, Oriyanri Village, Eleko Ibeju Lekki Lagos</span>
+    </li>
+    <li class="flex">
+    <div class="w-5 h-5 flex items-center justify-center mr-3">
+    <i class="ri-phone-line"></i>
+    </div>
+    <span>(+234)7044568716</span>
+    </li>
+    <li class="flex">
+    <div class="w-5 h-5 flex items-center justify-center mr-3">
+    <i class="ri-mail-line"></i>
+    </div>
+    <span>info@hermitagemultiventure.com</span>
+    </li>
+    </ul>
+    </div>
+    </div>
+    <div class="border-t border-gray-700 pt-8">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+    <p>© 2025 Hermitage Multiventure Ltd. All Rights Reserved.</p>
+    <div class="flex space-x-4 mt-4 md:mt-0">
+    <a href="#" class="hover:text-secondary">Privacy Policy</a>
+    <a href="#" class="hover:text-secondary">Terms of Service</a>
+    <a href="#" class="hover:text-secondary">Cookie Policy</a>
+    </div>
+    </div>
+    </div>
+    </div>
+    </footer>
 
 
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
-
-        
-        <!-- JavaScript Libraries -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/counterup/counterup.min.js"></script>
-        <script src="lib/lightbox/js/lightbox.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        
-
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
-    </body>
-
+    <script id="navToggle">
+        document.addEventListener("DOMContentLoaded", function () {
+          const mobileMenuButton = document.createElement("button");
+          mobileMenuButton.className = "md:hidden p-2 text-white";
+          mobileMenuButton.innerHTML = '<i class="ri-menu-line ri-lg"></i>';
+          const nav = document.querySelector("nav");
+          const headerDiv = document.querySelector("header > div");
+          headerDiv.insertBefore(mobileMenuButton, headerDiv.children[1]);
+          mobileMenuButton.addEventListener("click", () => {
+            nav.classList.toggle("hidden");
+            nav.classList.toggle("flex");
+            nav.classList.toggle("flex-col");
+            nav.classList.toggle("absolute");
+            nav.classList.toggle("top-full");
+            nav.classList.toggle("left-0");
+            nav.classList.toggle("right-0");
+            nav.classList.toggle("bg-primary");
+            nav.classList.toggle("p-4");
+            nav.classList.toggle("z-50");
+          });
+        });
+      </script>
+      <script id="modalSystem">
+        document.addEventListener("DOMContentLoaded", function () {
+          const modalHtml = `
+        <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+        <div class="bg-white rounded-lg p-8 max-w-md w-full mx-4">
+        <div class="flex justify-between items-center mb-6">
+        <h3 class="text-xl font-bold text-primary" id="modalTitle"></h3>
+        <button class="text-gray-400 hover:text-gray-600" onclick="closeModal()">
+        <i class="ri-close-line ri-lg"></i>
+        </button>
+        </div>
+        <div id="modalContent"></div>
+        </div>
+        </div>
+        `;
+          document.body.insertAdjacentHTML("beforeend", modalHtml);
+          window.showModal = function (title, content) {
+            const modal = document.getElementById("modal");
+            document.getElementById("modalTitle").textContent = title;
+            document.getElementById("modalContent").innerHTML = content;
+            modal.classList.remove("hidden");
+            modal.classList.add("flex");
+            document.body.style.overflow = "hidden";
+          };
+          window.closeModal = function () {
+            const modal = document.getElementById("modal");
+            modal.classList.add("hidden");
+            modal.classList.remove("flex");
+            document.body.style.overflow = "";
+          };
+        });
+      </script>
+      <script id="buttonActions">
+        document.addEventListener("DOMContentLoaded", function () {
+          window.showContactModal = function (event) {
+            event.preventDefault();
+            showModal(
+              "Contact Us",
+              `
+                <form onsubmit="event.preventDefault(); submitContactForm(this);" class="space-y-4">
+                    <div class="space-y-2">
+                        <input type="text" name="name" placeholder="Your Name" required class="w-full p-3 border rounded text-sm">
+                        <input type="email" name="email" placeholder="Your Email" required class="w-full p-3 border rounded text-sm">
+                        <input type="tel" name="phone" placeholder="Your Phone" class="w-full p-3 border rounded text-sm">
+                        <select name="subject" class="w-full p-3 border rounded text-sm pr-8">
+                            <option value="">Select Subject</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="service">Service Request</option>
+                            <option value="support">Technical Support</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <textarea name="message" placeholder="Your Message" required class="w-full p-3 border rounded h-32 text-sm"></textarea>
+                    </div>
+                    <button type="submit" class="bg-secondary text-white px-6 py-3 !rounded-button w-full">Send Message</button>
+                </form>
+            `,
+            );
+          };
+          // Smooth scroll for navigation links
+          document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+            anchor.addEventListener("click", function (e) {
+              e.preventDefault();
+              const section = document.querySelector(this.getAttribute("href"));
+              if (section) {
+                section.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }
+            });
+          });
+          // Quote button action
+          document.querySelectorAll("button").forEach((button) => {
+            button.addEventListener("click", function () {
+              const buttonText = this.textContent.trim();
+              if (buttonText === "Get a Quote" || buttonText === "Submit Request") {
+                showModal(
+                  "Request a Quote",
+                  `
+        <form onsubmit="event.preventDefault(); submitQuoteForm(this);" class="space-y-4">
+        <input type="text" name="name" placeholder="Your Name" required class="w-full p-3 border rounded">
+        <input type="email" name="email" placeholder="Your Email" required class="w-full p-3 border rounded">
+        <textarea name="message" placeholder="Your Message" required class="w-full p-3 border rounded h-32"></textarea>
+        <button type="submit" class="bg-secondary text-white px-6 py-3 rounded w-full">Submit Quote Request</button>
+        </form>
+        `,
+                );
+              } else if (
+                buttonText === "Discover More" ||
+                buttonText === "Learn More" ||
+                buttonText === "View All Services"
+              ) {
+                const section = this.closest("section").nextElementSibling;
+                if (section) {
+                  section.scrollIntoView({ behavior: "smooth" });
+                }
+              } else if (buttonText === "Read More" || buttonText === "View Details") {
+                const title = this.closest("div").querySelector("h3").textContent;
+                showModal(
+                  title,
+                  `
+        <div class="space-y-4">
+        <p class="text-gray-600">Detailed information about ${title.toLowerCase()} will be provided here. Contact our team for more specific information about this service.</p>
+        <button onclick="showModal('Contact Us', contactFormHTML)" class="bg-secondary text-white px-6 py-3 rounded w-full">Contact Our Team</button>
+        </div>
+        `,
+                );
+              }
+            });
+          });
+          // Contact form HTML template
+          window.contactFormHTML = `
+        <form onsubmit="event.preventDefault(); submitContactForm(this);" class="space-y-4">
+        <input type="text" name="name" placeholder="Your Name" required class="w-full p-3 border rounded">
+        <input type="email" name="email" placeholder="Your Email" required class="w-full p-3 border rounded">
+        <input type="tel" name="phone" placeholder="Your Phone" class="w-full p-3 border rounded">
+        <textarea name="message" placeholder="Your Message" required class="w-full p-3 border rounded h-32"></textarea>
+        <button type="submit" class="bg-secondary text-white px-6 py-3 rounded w-full">Send Message</button>
+        </form>
+        `;
+          // Form submission handlers
+          window.submitQuoteForm = function (form) {
+            const formData = new FormData(form);
+            // Here you would typically send the data to your server
+            showModal(
+              "Success",
+              `
+        <div class="text-center">
+        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+        <i class="ri-check-line ri-2x text-green-500"></i>
+        </div>
+        <p class="text-gray-600 mb-4">Thank you for your quote request. Our team will contact you shortly.</p>
+        <button onclick="closeModal()" class="bg-secondary text-white px-6 py-3 rounded">Close</button>
+        </div>
+        `,
+            );
+          };
+          window.submitContactForm = function (form) {
+            const formData = new FormData(form);
+            // Here you would typically send the data to your server
+            showModal(
+              "Success",
+              `
+        <div class="text-center">
+        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+        <i class="ri-check-line ri-2x text-green-500"></i>
+        </div>
+        <p class="text-gray-600 mb-4">Thank you for contacting us. We will get back to you soon.</p>
+        <button onclick="closeModal()" class="bg-secondary text-white px-6 py-3 rounded">Close</button>
+        </div>
+        `,
+            );
+          };
+        });
+</script>
+</body>
 </html>
