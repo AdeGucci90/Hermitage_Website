@@ -1,428 +1,632 @@
 <!DOCTYPE html>
 <html lang="en">
-
-    <head>
-        <meta charset="utf-8">
-        <title>Hermitage Multiventure - Football Club</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="" name="keywords">
-        <meta content="" name="description">
-
-        <!-- Google Web Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:slnt,wght@-10..0,100..900&display=swap" rel="stylesheet">
-
-        <!-- Icon Font Stylesheet -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-        <!-- Libraries Stylesheet -->
-        <link rel="stylesheet" href="lib/animate/animate.min.css"/>
-        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-
-
-        <!-- Customized Bootstrap Stylesheet -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-
-        <!-- Template Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-
-    <body>
-
-        <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
-        </div>
-        <!-- Spinner End -->
-
-         <!-- Topbar Start -->
-         <div class="container-fluid topbar px-0 px-lg-4 bg-light py-2 d-none d-lg-block">
-            <div class="container">
-                <div class="row gx-0 align-items-center">
-                    <div class="col-lg-8 text-center text-lg-start mb-lg-0">
-                        <div class="d-flex flex-wrap">
-                            
-                            <div class="ps-3">
-                                <a href="mailto:info@hermitagemultiventure.com" class="text-muted small"><i class="fas fa-envelope text-primary me-2"></i>info@hermitagemultiventure.com</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 text-center text-lg-end">
-                        <div class="d-flex justify-content-end">
-                                <a class="btn p-0 text-primary me-3" href="https://www.facebook.com/profile.php?id=61576336030485&mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn p-0 text-primary me-3" href="https://www.instagram.com/hermitagemultiventureltd?igsh=MWo1bjUzenh2dGl0ag==" target="_blank"><i class="fab fa-instagram"></i></a>
-                                <a class="btn p-0 text-primary me-3" href="#"><i class="fab fa-tiktok"></i></a>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Topbar End -->
-
-        <!-- Navbar & Hero Start -->
-        <div class="container-fluid nav-bar px-0 px-lg-4 py-lg-0">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light"> 
-                    <a href="index.html" class="navbar-brand p-0">
-                        <img src="img/logo-main.png" alt="Logo" style="max-width: auto; max-height: 95px; margin-right: 70px; margin-left: auto">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                        <span class="fa fa-bars"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarCollapse">
-                        <div class="navbar-nav mx-0 mx-lg-auto">
-                            <a href="index.html" class="nav-item nav-link active">Home</a>
-                            <div class="nav-item dropdown">
-                                <a href="#" class="nav-link" data-bs-toggle="dropdown">
-                                    <span class="dropdown-toggle">About Us</span>
-                                </a>
-                                <div class="dropdown-menu">
-                                    <a href="about.html" class="dropdown-item">About</a>
-                                    <a href="FAQ.html" class="dropdown-item">FAQs</a>
-                                </div>
-                            </div>
-                            <div class="nav-item dropdown">
-                                <a href="#" class="nav-link" data-bs-toggle="dropdown">
-                                    <span class="dropdown-toggle">Our Company</span>
-                                </a>
-                                <div class="dropdown-menu">
-                                    <a href="oil-&-gas.html" class="dropdown-item">Hermitage Oil & Gas</a>
-                                    <a href="bakery.html" class="dropdown-item">Hermitage Bakery</a>
-                                    <a href="#" class="dropdown-item">Hermitage Football Club</a>
-                                </div>
-                            </div>
-                            <a href="#" class="nav-item nav-link">Services</a>
-                            <a href="#" class="nav-item nav-link">Foundation</a>
-                            <div class="nav-btn px-3">
-                                <a href="contact.html" class="btn btn-primary rounded-pill py-2 px-4 ms-3 flex-shrink-0"> Contact Us</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-none d-xl-flex flex-shrink-0 ps-4">
-                        <a href="#" class="btn btn-light btn-lg-square rounded-circle position-relative wow tada" data-wow-delay=".9s">
-                            <i class="fa fa-phone-alt fa-2x"></i>
-                            <div class="position-absolute" style="top: 7px; right: 12px;">
-                                <span><i class="fa fa-comment-dots text-secondary"></i></span>
-                            </div>
-                        </a>
-                        <div class="d-flex flex-column ms-3">
-                            <span>Call:</span>
-                            <a href="tel: +234 704 456 8716"><span class="text-dark">(+234)7044568716</span></a>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </div>
-        <!-- Navbar & Hero End -->
-
-
-        <!-- Header Start -->
-        <div class="container-fluid bg-breadcrumb">
-            <div class="container text-center py-5" style="max-width: 900px;">
-                <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">HERMITAGE FOOTBAL CLUB</h4>
-                <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item"><a href="football-club.html">Pages</a></li>
-                    <li class="breadcrumb-item active text-primary">Football Club</li>
-                </ol>    
-            </div>
-        </div>
-        <!-- Header End -->
-
-
-        <!-- Testimonial Start -->
-        <div class="container-fluid testimonial py-5">
-            <div class="container py-5">
-                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-                    <h4 class="text-primary">Testimonial</h4>
-                    <h1 class="display-4 mb-4">What Our Customers Are Saying</h1>
-                    <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur adipisci facilis cupiditate recusandae aperiam temporibus corporis itaque quis facere, numquam, ad culpa deserunt sint dolorem autem obcaecati, ipsam mollitia hic.
-                    </p>
-                </div>
-                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="testimonial-item bg-light rounded">
-                        <div class="row g-0">
-                            <div class="col-4  col-lg-4 col-xl-3">
-                                <div class="h-100">
-                                    <img src="img/testimonial-1.jpg" class="img-fluid h-100 rounded" style="object-fit: cover;" alt="">
-                                </div>
-                            </div>
-                            <div class="col-8 col-lg-8 col-xl-9">
-                                <div class="d-flex flex-column my-auto text-start p-4">
-                                    <h4 class="text-dark mb-0">Client Name</h4>
-                                    <p class="mb-3">Profession</p>
-                                    <div class="d-flex text-primary mb-3">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim error molestiae aut modi corrupti fugit eaque rem nulla incidunt temporibus quisquam,
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item bg-light rounded">
-                        <div class="row g-0">
-                            <div class="col-4  col-lg-4 col-xl-3">
-                                <div class="h-100">
-                                    <img src="img/testimonial-2.jpg" class="img-fluid h-100 rounded" style="object-fit: cover;" alt="">
-                                </div>
-                            </div>
-                            <div class="col-8 col-lg-8 col-xl-9">
-                                <div class="d-flex flex-column my-auto text-start p-4">
-                                    <h4 class="text-dark mb-0">Client Name</h4>
-                                    <p class="mb-3">Profession</p>
-                                    <div class="d-flex text-primary mb-3">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star text-body"></i>
-                                    </div>
-                                    <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim error molestiae aut modi corrupti fugit eaque rem nulla incidunt temporibus quisquam,
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item bg-light rounded">
-                        <div class="row g-0">
-                            <div class="col-4  col-lg-4 col-xl-3">
-                                <div class="h-100">
-                                    <img src="img/testimonial-3.jpg" class="img-fluid h-100 rounded" style="object-fit: cover;" alt="">
-                                </div>
-                            </div>
-                            <div class="col-8 col-lg-8 col-xl-9">
-                                <div class="d-flex flex-column my-auto text-start p-4">
-                                    <h4 class="text-dark mb-0">Client Name</h4>
-                                    <p class="mb-3">Profession</p>
-                                    <div class="d-flex text-primary mb-3">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star text-body"></i>
-                                        <i class="fas fa-star text-body"></i>
-                                    </div>
-                                    <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim error molestiae aut modi corrupti fugit eaque rem nulla incidunt temporibus quisquam,
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Testimonial End -->
-
-
-        <!-- Footer Start -->
-        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
-            <div class="container py-5">
-                <div class="row g-5">
-                    <div class="col-xl-9">
-                        <div class="mb-5">
-                            <div class="row g-4">
-                                <div class="col-md-6 col-lg-6 col-xl-5">
-                                    <div class="footer-item">
-                                        <a href="index.html" class="p-0">
-                                            <h3 class="text-white"><i class="fab fa-slack me-3"></i> LifeSure</h3>
-                                            <!-- <img src="img/logo.png" alt="Logo"> -->
-                                        </a>
-                                        <p class="text-white mb-4">Dolor amet sit justo amet elitr clita ipsum elitr est.Lorem ipsum dolor sit amet, consectetur adipiscing...</p>
-                                        <div class="footer-btn d-flex">
-                                            <a class="btn btn-md-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f"></i></a>
-                                            <a class="btn btn-md-square rounded-circle me-3" href="#"><i class="fab fa-twitter"></i></a>
-                                            <a class="btn btn-md-square rounded-circle me-3" href="#"><i class="fab fa-instagram"></i></a>
-                                            <a class="btn btn-md-square rounded-circle me-0" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-lg-6 col-xl-3">
-                                    <div class="footer-item">
-                                        <h4 class="text-white mb-4">Useful Links</h4>
-                                        <a href="#"><i class="fas fa-angle-right me-2"></i> About Us</a>
-                                        <a href="#"><i class="fas fa-angle-right me-2"></i> Features</a>
-                                        <a href="#"><i class="fas fa-angle-right me-2"></i> Services</a>
-                                        <a href="#"><i class="fas fa-angle-right me-2"></i> FAQ's</a>
-                                        <a href="#"><i class="fas fa-angle-right me-2"></i> Blogs</a>
-                                        <a href="#"><i class="fas fa-angle-right me-2"></i> Contact</a>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-lg-6 col-xl-4">
-                                    <div class="footer-item">
-                                        <h4 class="mb-4 text-white">Instagram</h4>
-                                        <div class="row g-3">
-                                            <div class="col-4">
-                                                <div class="footer-instagram rounded">
-                                                    <img src="img/instagram-footer-1.jpg" class="img-fluid w-100" alt="">
-                                                    <div class="footer-search-icon">
-                                                        <a href="img/instagram-footer-1.jpg" data-lightbox="footerInstagram-1" class="my-auto"><i class="fas fa-link text-white"></i></a>
-                                                    </div>
-                                                </div>
-                                           </div>
-                                           <div class="col-4">
-                                                <div class="footer-instagram rounded">
-                                                    <img src="img/instagram-footer-2.jpg" class="img-fluid w-100" alt="">
-                                                    <div class="footer-search-icon">
-                                                        <a href="img/instagram-footer-2.jpg" data-lightbox="footerInstagram-2" class="my-auto"><i class="fas fa-link text-white"></i></a>
-                                                    </div>
-                                                </div>
-                                           </div>
-                                            <div class="col-4">
-                                                <div class="footer-instagram rounded">
-                                                    <img src="img/instagram-footer-3.jpg" class="img-fluid w-100" alt="">
-                                                    <div class="footer-search-icon">
-                                                        <a href="img/instagram-footer-3.jpg" data-lightbox="footerInstagram-3" class="my-auto"><i class="fas fa-link text-white"></i></a>
-                                                    </div>
-                                                </div>
-                                           </div>
-                                            <div class="col-4">
-                                                <div class="footer-instagram rounded">
-                                                    <img src="img/instagram-footer-4.jpg" class="img-fluid w-100" alt="">
-                                                    <div class="footer-search-icon">
-                                                        <a href="img/instagram-footer-4.jpg" data-lightbox="footerInstagram-4" class="my-auto"><i class="fas fa-link text-white"></i></a>
-                                                    </div>
-                                                </div>
-                                           </div>
-                                            <div class="col-4">
-                                                <div class="footer-instagram rounded">
-                                                    <img src="img/instagram-footer-5.jpg" class="img-fluid w-100" alt="">
-                                                    <div class="footer-search-icon">
-                                                        <a href="img/instagram-footer-5.jpg" data-lightbox="footerInstagram-5" class="my-auto"><i class="fas fa-link text-white"></i></a>
-                                                    </div>
-                                                </div>
-                                           </div>
-                                           <div class="col-4">
-                                                <div class="footer-instagram rounded">
-                                                    <img src="img/instagram-footer-6.jpg" class="img-fluid w-100" alt="">
-                                                    <div class="footer-search-icon">
-                                                        <a href="img/instagram-footer-6.jpg" data-lightbox="footerInstagram-6" class="my-auto"><i class="fas fa-link text-white"></i></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pt-5" style="border-top: 1px solid rgba(255, 255, 255, 0.08);">
-                            <div class="row g-0">
-                                <div class="col-12">
-                                    <div class="row g-4">
-                                        <div class="col-lg-6 col-xl-4">
-                                            <div class="d-flex">
-                                                <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
-                                                    <i class="fas fa-map-marker-alt fa-2x"></i>
-                                                </div>
-                                                <div>
-                                                    <h4 class="text-white">Address</h4>
-                                                    <p class="mb-0">123 Street New York.USA</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-xl-4">
-                                            <div class="d-flex">
-                                                <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
-                                                    <i class="fas fa-envelope fa-2x"></i>
-                                                </div>
-                                                <div>
-                                                    <h4 class="text-white">Mail Us</h4>
-                                                    <p class="mb-0">info@example.com</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-xl-4">
-                                            <div class="d-flex">
-                                                <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
-                                                    <i class="fa fa-phone-alt fa-2x"></i>
-                                                </div>
-                                                <div>
-                                                    <h4 class="text-white">Telephone</h4>
-                                                    <p class="mb-0">(+012) 3456 7890</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-xl-3">
-                        <div class="footer-item">
-                            <h4 class="text-white mb-4">Newsletter</h4>
-                            <p class="text-white mb-3">Dolor amet sit justo amet elitr clita ipsum elitr est.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <div class="position-relative rounded-pill mb-4">
-                                <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
-                                <button type="button" class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
-                            </div>
-                            <div class="d-flex flex-shrink-0">
-                                <div class="footer-btn">
-                                    <a href="#" class="btn btn-lg-square rounded-circle position-relative wow tada" data-wow-delay=".9s">
-                                        <i class="fa fa-phone-alt fa-2x"></i>
-                                        <div class="position-absolute" style="top: 2px; right: 12px;">
-                                            <span><i class="fa fa-comment-dots text-secondary"></i></span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="d-flex flex-column ms-3 flex-shrink-0">
-                                    <span>Call to Our Experts</span>
-                                    <a href="tel:+ 0123 456 7890"><span class="text-white">Free: + 0123 456 7890</span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Footer End -->
-        
-        <!-- Copyright Start -->
-        <div class="container-fluid copyright py-4">
-            <div class="container">
-                <div class="row g-4 align-items-center">
-                    <div class="col-md-6 text-center text-md-end mb-md-0">
-                        <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>Your Site Name</a>, All right reserved.</span>
-                    </div>
-                    <div class="col-md-6 text-center text-md-start text-body">
-                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
-                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
-                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                        Designed By <a class="border-bottom text-white" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a class="border-bottom text-white" href="https://themewagon.com">ThemeWagon</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Copyright End -->
-
-
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
-
-        
-        <!-- JavaScript Libraries -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/counterup/counterup.min.js"></script>
-        <script src="lib/lightbox/js/lightbox.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        
-
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
-    </body>
-
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hermitage Football Club</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#1C1C1C',secondary:'#C5A572'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+.carousel-dots .dot {
+width: 10px;
+height: 10px;
+border-radius: 50%;
+background-color: rgba(255, 255, 255, 0.5);
+margin: 0 5px;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+.carousel-dots .dot.active {
+background-color: #fff;
+width: 30px;
+border-radius: 5px;
+}
+.video-container {
+position: relative;
+overflow: hidden;
+border-radius: 8px;
+}
+.video-container .play-button {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 10;
+transition: all 0.3s;
+}
+.video-container:hover .play-button {
+transform: translate(-50%, -50%) scale(1.1);
+}
+.nav-link {
+position: relative;
+}
+.nav-link::after {
+content: '';
+position: absolute;
+width: 0;
+height: 2px;
+bottom: -5px;
+left: 0;
+background-color: #e6da39b0;
+transition: width 0.3s;
+}
+.nav-link.active::after,
+.nav-link:hover::after {
+width: 100%;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+.news-card {
+overflow: hidden;
+transition: transform 0.3s;
+}
+.news-card:hover {
+transform: translateY(-5px);
+}
+.news-card img {
+transition: transform 0.5s;
+}
+.news-card:hover img {
+transform: scale(1.05);
+}
+@media (max-width: 768px) {
+.mobile-menu {
+position: fixed;
+top: 0;
+right: -100%;
+width: 70%;
+height: 100vh;
+background-color: rgba(255, 255, 255, 0.469);
+z-index: 100;
+transition: right 0.3s;
+display: flex;
+flex-direction: column;
+padding: 80px 20px 20px;
+}
+.mobile-menu.active {
+right: 0;
+}
+}
+</style>
+</head>
+<body class="font-sans bg-gray-50">
+<!-- Header -->
+<header class="bg-primary text-white sticky top-0 z-50">
+<div class="container mx-auto px-4 py-3 flex items-center justify-between">
+<div class="flex items-center">
+<div class="flex items-center">
+<img src="https://static.readdy.ai/image/3bebe0ab8b05f6ebf71830164f34c258/a6ab10cf6a41ab3cd57b9989b659c76f.jpeg" alt="Hermitage Football Club" class="h-12 mr-3">
+<h1 class="text-xl font-bold">Hermitage Football Club</h1>
+</div>
+</div>
+<nav class="hidden md:flex items-center space-x-8">
+    <a href="index.html" class="nav-link text-sm font-medium flex items-center">
+        <i class="ri-arrow-left-line ri-lg mr-1"></i>
+        Back to Main Site
+    </a>
+<a href="#" class="nav-link active text-sm font-medium">News</a>
+<a href="#" class="nav-link text-sm font-medium">Activities</a>
+<a href="#" class="nav-link text-sm font-medium">Services</a>
+<a href="#" class="nav-link text-sm font-medium">Contact Us</a>
+</nav>
+<div class="flex items-center">
+<button class="w-10 h-10 flex items-center justify-center text-white md:hidden" id="menu-toggle">
+<i class="ri-menu-line ri-lg"></i>
+</button>
+<button class="w-10 h-10 flex items-center justify-center text-white hidden md:flex">
+<i class="ri-apps-2-line ri-lg"></i>
+</button>
+</div>
+</div>
+</header>
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobile-menu">
+    <a href="index.html" class="nav-link text-sm font-medium flex items-center">
+        <i class="ri-arrow-left-line ri-lg mr-1"></i>
+        Back to Main Site
+    </a>
+<a href="#" class="text-white py-3 border-b border-blue-800">News</a>
+<a href="#" class="text-white py-3 border-b border-blue-800">Activities</a>
+<a href="#" class="text-white py-3 border-b border-blue-800">Services</a>
+<a href="#" class="text-white py-3">Contact Us</a>
+</div>
+<!-- Hero Section -->
+<section class="relative h-[500px] md:h-[600px] overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-r from-primary/80 to-primary/40 z-10"></div>
+<img src="https://readdy.ai/api/search-image?query=football%20player%20in%20blue%20jersey%20running%20in%20a%20stadium%20with%20bright%20lights%2C%20sunset%20in%20background%2C%20dynamic%20action%20shot%2C%20professional%20sports%20photography%2C%20dramatic%20lighting%2C%20high%20energy%2C%20stadium%20atmosphere&width=1920&height=1080&seq=hero1&orientation=landscape" alt="Football Player" class="absolute inset-0 w-full h-full object-cover object-top">
+<div class="container mx-auto px-4 h-full flex items-center relative z-20">
+<div class="max-w-2xl">
+<h2 class="text-5xl font-bold text-white mb-4">WELCOME</h2>
+<p class="text-white/90 text-lg mb-8">Here at Football Club, we pride ourselves on the high quality training, news and outstanding facilities that we offer our valued guests. Join us to experience the passion of the beautiful game.</p>
+<button class="bg-secondary text-white px-6 py-3 rounded-button font-medium flex items-center whitespace-nowrap">
+More News
+<i class="ri-arrow-right-line ri-lg ml-2"></i>
+</button>
+</div>
+</div>
+<!-- Social Media Sidebar -->
+<div class="absolute right-8 top-1/2 transform -translate-y-1/2 z-20 hidden md:block">
+<div class="flex flex-col space-y-6">
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-white/10 backdrop-blur-sm rounded-full hover:bg-white/20 transition">
+<i class="ri-facebook-fill ri-lg text-white"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-white/10 backdrop-blur-sm rounded-full hover:bg-white/20 transition">
+<i class="ri-instagram-line ri-lg text-white"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-white/10 backdrop-blur-sm rounded-full hover:bg-white/20 transition">
+<i class="ri-twitter-x-line ri-lg text-white"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-white/10 backdrop-blur-sm rounded-full hover:bg-white/20 transition">
+<i class="ri-youtube-line ri-lg text-white"></i>
+</a>
+</div>
+</div>
+<!-- Carousel Dots -->
+<div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+<div class="carousel-dots flex items-center">
+<div class="dot active" data-index="0"></div>
+<div class="dot" data-index="1"></div>
+<div class="dot" data-index="2"></div>
+<div class="dot" data-index="3"></div>
+<div class="dot" data-index="4"></div>
+</div>
+</div>
+</section>
+<!-- News Section -->
+<section class="py-16 bg-white">
+<div class="container mx-auto px-4">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8">
+<h2 class="text-3xl font-bold text-gray-900 mb-4 md:mb-0">Sport News</h2>
+<button class="bg-secondary text-white px-4 py-2 rounded-button text-sm font-medium whitespace-nowrap">
+More
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="news-card rounded-lg shadow-md overflow-hidden bg-white">
+<div class="relative h-48 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=football%20player%20in%20blue%20jersey%20dribbling%20a%20ball%20on%20green%20field%2C%20action%20shot%2C%20professional%20sports%20photography%2C%20sunny%20day&width=600&height=400&seq=news1&orientation=landscape" alt="Football News" class="w-full h-full object-cover object-top">
+<div class="absolute bottom-0 left-0 bg-secondary text-white text-xs px-3 py-1">
+News
+</div>
+</div>
+<div class="p-4">
+<h3 class="font-bold text-lg mb-2">Team Secures Crucial Victory in League Match</h3>
+<p class="text-gray-600 text-sm">Our team delivered an outstanding performance last weekend, securing a 3-1 victory against rivals in a crucial league match.</p>
+<div class="mt-4 flex items-center justify-between">
+<span class="text-xs text-gray-500">June 8, 2025</span>
+<a href="#" class="text-primary text-sm font-medium">Read more</a>
+</div>
+</div>
+</div>
+<div class="news-card rounded-lg shadow-md overflow-hidden bg-white">
+<div class="relative h-48 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=group%20of%20young%20athletes%20celebrating%20victory%2C%20holding%20trophy%2C%20joyful%20moment%2C%20professional%20sports%20photography%2C%20stadium%20background&width=600&height=400&seq=news2&orientation=landscape" alt="Football News" class="w-full h-full object-cover object-top">
+<div class="absolute bottom-0 left-0 bg-secondary text-white text-xs px-3 py-1">
+Events
+</div>
+</div>
+<div class="p-4">
+<h3 class="font-bold text-lg mb-2">Youth Academy Triumphs in Regional Tournament</h3>
+<p class="text-gray-600 text-sm">Our youth academy players showed exceptional talent and teamwork, bringing home the championship trophy from the regional tournament.</p>
+<div class="mt-4 flex items-center justify-between">
+<span class="text-xs text-gray-500">June 5, 2025</span>
+<a href="#" class="text-primary text-sm font-medium">Read more</a>
+</div>
+</div>
+</div>
+<div class="news-card rounded-lg shadow-md overflow-hidden bg-white">
+<div class="relative h-48 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=golden%20trophy%20cup%20on%20stadium%20field%20with%20spotlights%2C%20championship%20award%2C%20professional%20sports%20photography%2C%20dramatic%20lighting&width=600&height=400&seq=news3&orientation=landscape" alt="Football News" class="w-full h-full object-cover object-top">
+<div class="absolute bottom-0 left-0 bg-secondary text-white text-xs px-3 py-1">
+Awards
+</div>
+</div>
+<div class="p-4">
+<h3 class="font-bold text-lg mb-2">Club Nominated for Excellence in Sports Management</h3>
+<p class="text-gray-600 text-sm">We're proud to announce our nomination for the prestigious Sports Management Excellence Award, recognizing our commitment to quality.</p>
+<div class="mt-4 flex items-center justify-between">
+<span class="text-xs text-gray-500">June 2, 2025</span>
+<a href="#" class="text-primary text-sm font-medium">Read more</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Videos Section -->
+<section class="py-16 bg-gray-50">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-gray-900 mb-12">Videos</h2>
+<div class="flex flex-col md:flex-row gap-8 items-center relative">
+<div class="md:w-1/2">
+<div class="max-w-md">
+<p class="text-gray-700 mb-6">It's challenging without being intimidating. Competitive, yet it brings out a sense of camaraderie. It's where you can develop your game with lessons.</p>
+<p class="text-gray-700 mb-8">Competitive, yet it brings out a sense of camaraderie. It's where you can develop your game.</p>
+<div class="flex space-x-3">
+<button class="w-10 h-10 flex items-center justify-center bg-primary text-white rounded-full hover:bg-primary/90 transition whitespace-nowrap !rounded-button">
+<i class="ri-arrow-left-s-line ri-lg"></i>
+</button>
+<button class="w-10 h-10 flex items-center justify-center bg-primary text-white rounded-full hover:bg-primary/90 transition whitespace-nowrap !rounded-button">
+<i class="ri-arrow-right-s-line ri-lg"></i>
+</button>
+</div>
+</div>
+</div>
+<div class="md:w-1/2 flex flex-col md:flex-row gap-4 relative">
+<div class="video-container w-full md:w-2/3 h-56 md:h-72 bg-gray-200 rounded-lg overflow-hidden shadow-md">
+<img src="https://readdy.ai/api/search-image?query=two%20football%20players%20in%20training%20session%2C%20one%20coaching%20the%20other%2C%20friendly%20atmosphere%2C%20professional%20sports%20photography%2C%20training%20ground&width=600&height=400&seq=video1&orientation=landscape" alt="Football Video" class="w-full h-full object-cover object-top">
+<div class="play-button w-16 h-16 flex items-center justify-center bg-secondary rounded-full cursor-pointer">
+<i class="ri-play-fill ri-2x text-white"></i>
+</div>
+</div>
+<div class="absolute -bottom-12 -left-12 hidden md:block w-48 h-32 rounded-lg overflow-hidden shadow-md">
+<img src="https://readdy.ai/api/search-image?query=swimmer%20in%20pool%2C%20water%20splashing%2C%20blue%20water%2C%20professional%20sports%20photography%2C%20training%20session&width=300&height=200&seq=video2&orientation=landscape" alt="Swimming Video" class="w-full h-full object-cover object-top">
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Our News Section -->
+<section class="py-16 bg-white">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-gray-900 mb-12">Our News</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="news-card rounded-lg shadow-md overflow-hidden bg-white">
+<div class="h-48 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=football%20player%20in%20blue%20jersey%20dribbling%20a%20ball%20on%20green%20field%2C%20action%20shot%2C%20professional%20sports%20photography%2C%20sunny%20day&width=600&height=400&seq=news4&orientation=landscape" alt="Football News" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h3 class="font-bold text-lg mb-2">New Training Techniques Implemented</h3>
+<p class="text-gray-600 text-sm">Our coaching staff has introduced innovative training methods to enhance player performance and technical skills.</p>
+</div>
+</div>
+<div class="news-card rounded-lg shadow-md overflow-hidden bg-white">
+<div class="h-48 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=group%20of%20young%20athletes%20celebrating%20victory%2C%20holding%20trophy%2C%20joyful%20moment%2C%20professional%20sports%20photography%2C%20stadium%20background&width=600&height=400&seq=news5&orientation=landscape" alt="Football News" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h3 class="font-bold text-lg mb-2">Summer Camp Registration Now Open</h3>
+<p class="text-gray-600 text-sm">Join our annual summer camp for young players aged 7-15. Develop skills, make friends, and enjoy the beautiful game.</p>
+</div>
+</div>
+<div class="news-card rounded-lg shadow-md overflow-hidden bg-white">
+<div class="h-48 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=golden%20trophy%20cup%20on%20stadium%20field%20with%20spotlights%2C%20championship%20award%2C%20professional%20sports%20photography%2C%20dramatic%20lighting&width=600&height=400&seq=news6&orientation=landscape" alt="Football News" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-4">
+<h3 class="font-bold text-lg mb-2">Club Facilities Expansion Announced</h3>
+<p class="text-gray-600 text-sm">We're excited to announce the upcoming expansion of our training facilities, including new pitches and state-of-the-art equipment.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- About Us Section -->
+<section class="py-16 bg-gray-50">
+<div class="container mx-auto px-4">
+<div class="flex flex-col md:flex-row gap-12 items-center">
+<div class="md:w-1/2">
+<div class="relative h-[600px] rounded-lg overflow-hidden shadow-lg">
+<img src="https://readdy.ai/api/search-image?query=modern%20football%20stadium%20at%20sunset%2C%20beautiful%20architecture%2C%20dramatic%20lighting%2C%20professional%20sports%20photography%2C%20golden%20hour%2C%20pristine%20pitch%2C%20state-of-the-art%20facilities&width=800&height=1200&seq=about1&orientation=portrait" alt="Club Stadium" class="w-full h-full object-cover object-top">
+<div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6">
+<div class="grid grid-cols-3 gap-4">
+<div class="bg-white/10 backdrop-blur-sm p-4 rounded-lg text-center text-white">
+<div class="text-3xl font-bold mb-1">1923</div>
+<div class="text-sm">Founded</div>
+</div>
+<div class="bg-white/10 backdrop-blur-sm p-4 rounded-lg text-center text-white">
+<div class="text-3xl font-bold mb-1">15+</div>
+<div class="text-sm">Trophies</div>
+</div>
+<div class="bg-white/10 backdrop-blur-sm p-4 rounded-lg text-center text-white">
+<div class="text-3xl font-bold mb-1">5000+</div>
+<div class="text-sm">Members</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md:w-1/2">
+<h2 class="text-4xl font-bold text-gray-900 mb-6">Our Legacy of Excellence</h2>
+<div class="space-y-6 text-gray-600">
+<p>Founded in 1923, Hermitage Football Club has been a cornerstone of sporting excellence and community spirit. Our commitment to developing young talent and promoting the beautiful game has made us one of the most respected football institutions in the region.</p>
+<p>We pride ourselves on our state-of-the-art facilities, professional coaching staff, and comprehensive youth development program. Our mission is to nurture not just skilled athletes, but well-rounded individuals who embody the values of sportsmanship, teamwork, and dedication.</p>
+<div class="grid grid-cols-2 gap-6 mt-8">
+<div class="bg-white p-6 rounded-lg shadow-md">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-lg mb-4">
+<i class="ri-trophy-line ri-lg text-primary"></i>
+</div>
+<h3 class="text-lg font-bold text-gray-900 mb-2">Elite Training</h3>
+<p class="text-sm text-gray-600">Professional coaching staff with international experience and UEFA licenses.</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-lg mb-4">
+<i class="ri-team-line ri-lg text-primary"></i>
+</div>
+<h3 class="text-lg font-bold text-gray-900 mb-2">Youth Academy</h3>
+<p class="text-sm text-gray-600">Comprehensive development program for young talents aged 6-18.</p>
+</div>
+</div>
+<button class="mt-8 bg-primary text-white px-8 py-3 rounded-button font-medium inline-flex items-center whitespace-nowrap">
+Learn More
+<i class="ri-arrow-right-line ri-lg ml-2"></i>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Activities Section -->
+<section class="py-16 bg-primary text-white relative">
+<div class="absolute inset-0 bg-black/30"></div>
+<img src="https://readdy.ai/api/search-image?query=football%20fans%20in%20stadium%20at%20night%2C%20crowd%20cheering%2C%20stadium%20lights%2C%20energetic%20atmosphere%2C%20professional%20sports%20photography%2C%20dramatic%20lighting&width=1920&height=1080&seq=activities1&orientation=landscape" alt="Football Fans" class="absolute inset-0 w-full h-full object-cover object-top mix-blend-overlay opacity-80">
+<div class="container mx-auto px-4 relative z-10">
+<h2 class="text-3xl font-bold mb-8">Activities</h2>
+<div class="max-w-2xl">
+<p class="text-white/90 mb-8">The club's board of directors and the Pioneers Committee are pleased to announce the organization of the Day of Loyalty Ceremony for club members. Join us for this special event celebrating our club's heritage and honoring those who have contributed to our success.</p>
+<div class="flex space-x-3 mb-8">
+<button class="w-10 h-10 flex items-center justify-center bg-white/10 text-white rounded-full hover:bg-white/20 transition whitespace-nowrap !rounded-button">
+<i class="ri-arrow-left-s-line ri-lg"></i>
+</button>
+<button class="w-10 h-10 flex items-center justify-center bg-white/10 text-white rounded-full hover:bg-white/20 transition whitespace-nowrap !rounded-button">
+<i class="ri-arrow-right-s-line ri-lg"></i>
+</button>
+</div>
+<button class="bg-secondary text-white px-6 py-3 rounded-button font-medium flex items-center whitespace-nowrap">
+More
+<i class="ri-arrow-right-line ri-lg ml-2"></i>
+</button>
+</div>
+</div>
+</section>
+<!-- Registration Forms Section -->
+<section class="py-16 bg-white">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">Join Our Community</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Participant Form -->
+<div class="bg-gray-50 rounded-lg p-6 shadow-md">
+<h3 class="text-xl font-bold text-gray-900 mb-6">Participant Registration</h3>
+<form id="participant-form">
+<div class="mb-4">
+<label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+<input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary" required>
+</div>
+<div class="mb-4">
+<label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+<input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary" required>
+</div>
+<div class="mb-4">
+<label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+<input type="tel" id="phone" name="phone" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary" required>
+</div>
+<div class="mb-4">
+<label for="event" class="block text-sm font-medium text-gray-700 mb-1">Event</label>
+<div class="relative">
+<select id="event" name="event" class="w-full px-4 py-2 border border-gray-300 rounded appearance-none focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary pr-8" required>
+<option value="">Select an event</option>
+<option value="summer-camp">Summer Training Camp</option>
+<option value="loyalty-day">Day of Loyalty Ceremony</option>
+<option value="away-match">Away Match Trip</option>
+<option value="tournament">Local Tournament</option>
+</select>
+<div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
+<i class="ri-arrow-down-s-line text-gray-400"></i>
+</div>
+</div>
+</div>
+<div class="mb-6">
+<label class="block text-sm font-medium text-gray-700 mb-1">Age Group</label>
+<div class="flex flex-wrap gap-4">
+<label class="inline-flex items-center">
+<input type="radio" name="age_group" value="junior" class="hidden" required>
+<span class="w-5 h-5 border border-gray-300 rounded-full flex items-center justify-center mr-2 radio-custom"></span>
+<span class="text-sm text-gray-700">Junior (7-12)</span>
+</label>
+<label class="inline-flex items-center">
+<input type="radio" name="age_group" value="teen" class="hidden">
+<span class="w-5 h-5 border border-gray-300 rounded-full flex items-center justify-center mr-2 radio-custom"></span>
+<span class="text-sm text-gray-700">Teen (13-17)</span>
+</label>
+<label class="inline-flex items-center">
+<input type="radio" name="age_group" value="adult" class="hidden">
+<span class="w-5 h-5 border border-gray-300 rounded-full flex items-center justify-center mr-2 radio-custom"></span>
+<span class="text-sm text-gray-700">Adult (18+)</span>
+</label>
+</div>
+</div>
+<button type="submit" class="bg-primary text-white px-6 py-3 rounded-button font-medium w-full whitespace-nowrap">Register Now</button>
+</form>
+</div>
+<!-- Sponsor/Partner Form -->
+<div class="bg-gray-50 rounded-lg p-6 shadow-md">
+<h3 class="text-xl font-bold text-gray-900 mb-6">Sponsor & Partner Registration</h3>
+<form id="sponsor-form">
+<div class="mb-4">
+<label for="company_name" class="block text-sm font-medium text-gray-700 mb-1">Company Name</label>
+<input type="text" id="company_name" name="company_name" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary" required>
+</div>
+<div class="mb-4">
+<label for="contact_person" class="block text-sm font-medium text-gray-700 mb-1">Contact Person</label>
+<input type="text" id="contact_person" name="contact_person" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary" required>
+</div>
+<div class="mb-4">
+<label for="business_email" class="block text-sm font-medium text-gray-700 mb-1">Business Email</label>
+<input type="email" id="business_email" name="business_email" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary" required>
+</div>
+<div class="mb-4">
+<label for="business_phone" class="block text-sm font-medium text-gray-700 mb-1">Business Phone</label>
+<input type="tel" id="business_phone" name="business_phone" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary" required>
+</div>
+<div class="mb-4">
+<label for="partnership_type" class="block text-sm font-medium text-gray-700 mb-1">Partnership Type</label>
+<div class="relative">
+<select id="partnership_type" name="partnership_type" class="w-full px-4 py-2 border border-gray-300 rounded appearance-none focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary pr-8" required>
+<option value="">Select partnership type</option>
+<option value="main-sponsor">Main Sponsor</option>
+<option value="event-sponsor">Event Sponsor</option>
+<option value="equipment-provider">Equipment Provider</option>
+<option value="media-partner">Media Partner</option>
+</select>
+<div class="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
+<i class="ri-arrow-down-s-line text-gray-400"></i>
+</div>
+</div>
+</div>
+<div class="mb-6">
+<label for="company_logo" class="block text-sm font-medium text-gray-700 mb-1">Company Logo</label>
+<div class="flex items-center justify-center w-full">
+<label class="flex flex-col w-full h-32 border-2 border-dashed border-gray-300 rounded-lg hover:bg-gray-100 hover:border-primary transition cursor-pointer">
+<div class="flex flex-col items-center justify-center pt-7">
+<i class="ri-upload-cloud-line ri-3x text-gray-400"></i>
+<p class="pt-1 text-sm text-gray-500">Upload your logo</p>
+<p class="text-xs text-gray-400">PNG, JPG up to 2MB</p>
+</div>
+<input type="file" id="company_logo" name="company_logo" class="hidden" accept="image/*">
+</label>
+</div>
+</div>
+<button type="submit" class="bg-primary text-white px-6 py-3 rounded-button font-medium w-full whitespace-nowrap">Submit Application</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-16 bg-gray-50">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">Contact Us</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="md:col-span-2 bg-white rounded-lg shadow-md overflow-hidden h-96">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.696938969233!2d3.985983574992121!3d6.432961693558167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10394b3459a507b5%3A0x5b74bc3487645e03!2sHermitage%20House%20Lekki%20Free%20Zone%2C%20Lagos.%20Nigeria!5e0!3m2!1sen!2sng!4v1749673791871!5m2!1sen!2sng" width="850" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<img src="https://public.readdy.ai/gen_page/map_placeholder_1280x720.png" alt="Map" class="w-full h-full object-cover">
+</div>
+<div class="bg-primary text-white rounded-lg shadow-md p-6">
+<h3 class="text-xl font-bold mb-6">Address</h3>
+<p class="mb-4">Hermitage House<br>Hermitage Road, Oriyanri Village, <br>Eleko Ibeju Lekki Lagos</p>
+<h3 class="text-xl font-bold mb-4 mt-8">Phone</h3>
+<p class="mb-1">(+234)704456871</p>
+<h3 class="text-xl font-bold mb-4 mt-8">Email</h3>
+<p class="mb-1">infofootball@hermitagemultiventure.com</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-primary text-white py-8">
+<div class="container mx-auto px-4">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<div class="flex items-center mb-6 md:mb-0">
+<img src="https://static.readdy.ai/image/3bebe0ab8b05f6ebf71830164f34c258/a6ab10cf6a41ab3cd57b9989b659c76f.jpeg" alt="Hermitage Football Club" class="h-10 mr-3">
+<h2 class="text-lg font-bold">Hermitage Football Club</h2>
+</div>
+<div class="flex space-x-4 mb-6 md:mb-0">
+<a href="#" class="w-8 h-8 flex items-center justify-center bg-white/10 rounded-full hover:bg-white/20 transition">
+<i class="ri-facebook-fill text-white"></i>
+</a>
+<a href="#" class="w-8 h-8 flex items-center justify-center bg-white/10 rounded-full hover:bg-white/20 transition">
+<i class="ri-instagram-line text-white"></i>
+</a>
+<a href="#" class="w-8 h-8 flex items-center justify-center bg-white/10 rounded-full hover:bg-white/20 transition">
+<i class="ri-twitter-x-line text-white"></i>
+</a>
+</div>
+</div>
+<div class="border-t border-white/20 mt-6 pt-6 text-center text-sm text-white/70">
+<p>© All rights reserved • Copyright © 2025 Hermitage Football Club</p>
+<p class="mt-2 text-sm text-white/70">Uniting Dreams, Building Champions</p>
+</div>
+</div>
+</footer>
+<script id="menu-toggle-script">
+document.addEventListener('DOMContentLoaded', function() {
+const menuToggle = document.getElementById('menu-toggle');
+const mobileMenu = document.getElementById('mobile-menu');
+menuToggle.addEventListener('click', function() {
+mobileMenu.classList.toggle('active');
+});
+});
+</script>
+<script id="carousel-script">
+document.addEventListener('DOMContentLoaded', function() {
+const dots = document.querySelectorAll('.carousel-dots .dot');
+dots.forEach(dot => {
+dot.addEventListener('click', function() {
+dots.forEach(d => d.classList.remove('active'));
+this.classList.add('active');
+// Here you would normally change the slide
+});
+});
+});
+</script>
+<script id="form-script">
+document.addEventListener('DOMContentLoaded', function() {
+// Custom radio buttons
+const radioInputs = document.querySelectorAll('input[type="radio"]');
+radioInputs.forEach(input => {
+input.addEventListener('change', function() {
+// Reset all custom radio indicators
+document.querySelectorAll('.radio-custom').forEach(radio => {
+radio.innerHTML = '';
+});
+// Add indicator to selected radio
+if (this.checked) {
+const customRadio = this.nextElementSibling;
+customRadio.innerHTML = '<span class="w-3 h-3 bg-primary rounded-full"></span>';
+}
+});
+});
+// File upload preview
+const fileInput = document.getElementById('company_logo');
+if (fileInput) {
+fileInput.addEventListener('change', function(e) {
+const fileName = e.target.files[0].name;
+const fileSize = Math.round(e.target.files[0].size / 1024);
+const parent = this.parentElement;
+const infoDiv = parent.querySelector('div');
+infoDiv.innerHTML = `
+<i class="ri-file-line ri-3x text-primary"></i>
+<p class="pt-1 text-sm text-gray-700">${fileName}</p>
+<p class="text-xs text-gray-500">${fileSize}KB</p>
+`;
+});
+}
+// Form submission
+const participantForm = document.getElementById('participant-form');
+const sponsorForm = document.getElementById('sponsor-form');
+if (participantForm) {
+participantForm.addEventListener('submit', function(e) {
+e.preventDefault();
+alert('Participant registration submitted successfully!');
+this.reset();
+document.querySelectorAll('.radio-custom').forEach(radio => {
+radio.innerHTML = '';
+});
+});
+}
+if (sponsorForm) {
+sponsorForm.addEventListener('submit', function(e) {
+e.preventDefault();
+alert('Sponsor application submitted successfully!');
+this.reset();
+const infoDiv = this.querySelector('label[for="company_logo"] div');
+infoDiv.innerHTML = `
+<i class="ri-upload-cloud-line ri-3x text-gray-400"></i>
+<p class="pt-1 text-sm text-gray-500">Upload your logo</p>
+<p class="text-xs text-gray-400">PNG, JPG up to 2MB</p>
+`;
+});
+}
+});
+</script>
+</body>
 </html>
