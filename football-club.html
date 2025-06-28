@@ -121,33 +121,28 @@ right: 0;
 <button class="w-10 h-10 flex items-center justify-center text-white md:hidden" id="menu-toggle">
 <i class="ri-menu-line ri-lg"></i>
 </button>
-<button class="w-10 h-10 flex items-center justify-center text-white hidden md:flex">
-<i class="ri-apps-2-line ri-lg"></i>
-</button>
 </div>
 </div>
 </header>
 <!-- Mobile Menu -->
-<div class="mobile-menu" id="mobile-menu">
-    <a href="index.html" class="nav-link text-sm font-medium flex items-center">
-        <i class="ri-arrow-left-line ri-lg mr-1"></i>
-        Back to Main Site
-    </a>
+<div class="hidden fixed inset-0 bg-black bg-opacity-50 z-40" id="mobile-menu">
 <a href="#" class="text-white py-3 border-b border-blue-800">News</a>
 <a href="#" class="text-white py-3 border-b border-blue-800">Activities</a>
 <a href="#" class="text-white py-3 border-b border-blue-800">Services</a>
 <a href="#" class="text-white py-3">Contact Us</a>
 </div>
+<!--Mobile Menu End-->
+
 <!-- Hero Section -->
 <section class="relative h-[500px] md:h-[600px] overflow-hidden">
 <div class="absolute inset-0 bg-gradient-to-r from-primary/80 to-primary/40 z-10"></div>
-<img src="https://readdy.ai/api/search-image?query=football%20player%20in%20blue%20jersey%20running%20in%20a%20stadium%20with%20bright%20lights%2C%20sunset%20in%20background%2C%20dynamic%20action%20shot%2C%20professional%20sports%20photography%2C%20dramatic%20lighting%2C%20high%20energy%2C%20stadium%20atmosphere&width=1920&height=1080&seq=hero1&orientation=landscape" alt="Football Player" class="absolute inset-0 w-full h-full object-cover object-top">
+<img src="img/football_banner.jpg" alt="Football Player" class="absolute inset-0 w-full h-full object-cover object-top">
 <div class="container mx-auto px-4 h-full flex items-center relative z-20">
 <div class="max-w-2xl">
 <h2 class="text-5xl font-bold text-white mb-4">WELCOME</h2>
-<p class="text-white/90 text-lg mb-8">Here at Football Club, we pride ourselves on the high quality training, news and outstanding facilities that we offer our valued guests. Join us to experience the passion of the beautiful game.</p>
+<p class="text-white/90 text-lg mb-8">Here at Hermitage Football Club, we pride ourselves on the high quality training, news and outstanding facilities that we offer our valued guests. Join us to experience the passion of the beautiful game.</p>
 <button class="bg-secondary text-white px-6 py-3 rounded-button font-medium flex items-center whitespace-nowrap">
-More News
+Learn More
 <i class="ri-arrow-right-line ri-lg ml-2"></i>
 </button>
 </div>
@@ -184,7 +179,7 @@ More News
 <section class="py-16 bg-white">
 <div class="container mx-auto px-4">
 <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8">
-<h2 class="text-3xl font-bold text-gray-900 mb-4 md:mb-0">Sport News</h2>
+<h2 class="text-3xl font-bold text-gray-900 mb-4 md:mb-0">Recent Activities</h2>
 <button class="bg-secondary text-white px-4 py-2 rounded-button text-sm font-medium whitespace-nowrap">
 More
 </button>
@@ -192,7 +187,7 @@ More
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 <div class="news-card rounded-lg shadow-md overflow-hidden bg-white">
 <div class="relative h-48 overflow-hidden">
-<img src="https://readdy.ai/api/search-image?query=football%20player%20in%20blue%20jersey%20dribbling%20a%20ball%20on%20green%20field%2C%20action%20shot%2C%20professional%20sports%20photography%2C%20sunny%20day&width=600&height=400&seq=news1&orientation=landscape" alt="Football News" class="w-full h-full object-cover object-top">
+<img src="img/Football_news.jpg" alt="Football News" class="w-full h-full object-cover object-top">
 <div class="absolute bottom-0 left-0 bg-secondary text-white text-xs px-3 py-1">
 News
 </div>
@@ -208,7 +203,7 @@ News
 </div>
 <div class="news-card rounded-lg shadow-md overflow-hidden bg-white">
 <div class="relative h-48 overflow-hidden">
-<img src="https://readdy.ai/api/search-image?query=group%20of%20young%20athletes%20celebrating%20victory%2C%20holding%20trophy%2C%20joyful%20moment%2C%20professional%20sports%20photography%2C%20stadium%20background&width=600&height=400&seq=news2&orientation=landscape" alt="Football News" class="w-full h-full object-cover object-top">
+<img src="img/football_news2.jpg" alt="Football News" class="w-full h-full object-cover object-top">
 <div class="absolute bottom-0 left-0 bg-secondary text-white text-xs px-3 py-1">
 Events
 </div>
@@ -224,7 +219,7 @@ Events
 </div>
 <div class="news-card rounded-lg shadow-md overflow-hidden bg-white">
 <div class="relative h-48 overflow-hidden">
-<img src="https://readdy.ai/api/search-image?query=golden%20trophy%20cup%20on%20stadium%20field%20with%20spotlights%2C%20championship%20award%2C%20professional%20sports%20photography%2C%20dramatic%20lighting&width=600&height=400&seq=news3&orientation=landscape" alt="Football News" class="w-full h-full object-cover object-top">
+<img src="img/football_news3.jpg" alt="Football News" class="w-full h-full object-cover object-top">
 <div class="absolute bottom-0 left-0 bg-secondary text-white text-xs px-3 py-1">
 Awards
 </div>
@@ -242,73 +237,51 @@ Awards
 </div>
 </section>
 <!-- Videos Section -->
-<section class="py-16 bg-gray-50">
-<div class="container mx-auto px-4">
-<h2 class="text-3xl font-bold text-gray-900 mb-12">Videos</h2>
-<div class="flex flex-col md:flex-row gap-8 items-center relative">
-<div class="md:w-1/2">
-<div class="max-w-md">
-<p class="text-gray-700 mb-6">It's challenging without being intimidating. Competitive, yet it brings out a sense of camaraderie. It's where you can develop your game with lessons.</p>
-<p class="text-gray-700 mb-8">Competitive, yet it brings out a sense of camaraderie. It's where you can develop your game.</p>
-<div class="flex space-x-3">
-<button class="w-10 h-10 flex items-center justify-center bg-primary text-white rounded-full hover:bg-primary/90 transition whitespace-nowrap !rounded-button">
-<i class="ri-arrow-left-s-line ri-lg"></i>
-</button>
-<button class="w-10 h-10 flex items-center justify-center bg-primary text-white rounded-full hover:bg-primary/90 transition whitespace-nowrap !rounded-button">
-<i class="ri-arrow-right-s-line ri-lg"></i>
-</button>
-</div>
-</div>
-</div>
-<div class="md:w-1/2 flex flex-col md:flex-row gap-4 relative">
-<div class="video-container w-full md:w-2/3 h-56 md:h-72 bg-gray-200 rounded-lg overflow-hidden shadow-md">
-<img src="https://readdy.ai/api/search-image?query=two%20football%20players%20in%20training%20session%2C%20one%20coaching%20the%20other%2C%20friendly%20atmosphere%2C%20professional%20sports%20photography%2C%20training%20ground&width=600&height=400&seq=video1&orientation=landscape" alt="Football Video" class="w-full h-full object-cover object-top">
-<div class="play-button w-16 h-16 flex items-center justify-center bg-secondary rounded-full cursor-pointer">
-<i class="ri-play-fill ri-2x text-white"></i>
-</div>
-</div>
-<div class="absolute -bottom-12 -left-12 hidden md:block w-48 h-32 rounded-lg overflow-hidden shadow-md">
-<img src="https://readdy.ai/api/search-image?query=swimmer%20in%20pool%2C%20water%20splashing%2C%20blue%20water%2C%20professional%20sports%20photography%2C%20training%20session&width=300&height=200&seq=video2&orientation=landscape" alt="Swimming Video" class="w-full h-full object-cover object-top">
-</div>
-</div>
-</div>
-</div>
+<section class="py-16 bg-white"></section>
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-gray-900 mb-12">Video Highlights</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="news-card rounded-lg shadow-md overflow-hidden bg-white">
+                <div class="relative h-48 overflow-hidden">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/example1" title="Training Session" frameborder="0" allowfullscreen></iframe>
+                    <div class="absolute bottom-0 left-0 bg-secondary text-white text-xs px-3 py-1">
+                        Training
+                    </div>
+                </div>
+                <div class="p-4">
+                    <h3 class="font-bold text-lg mb-2">Training Session Highlights</h3>
+                    <p class="text-gray-600 text-sm">Check out our latest training session where players showcase their skills and teamwork.</p>
+                </div>
+            </div>
+            <div class="news-card rounded-lg shadow-md overflow-hidden bg-white">
+                <div class="relative h-48 overflow-hidden">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/example2" title="Match Highlights" frameborder="0" allowfullscreen></iframe>
+                    <div class="absolute bottom-0 left-0 bg-secondary text-white text-xs px-3 py-1">
+                        Match
+                    </div>
+                </div>
+                <div class="p-4">
+                    <h3 class="font-bold text-lg mb-2">Match Highlights</h3>
+                    <p class="text-gray-600 text-sm">Watch the highlights from our recent match where we secured a thrilling victory.</p>
+                </div>
+            </div>
+            <div class="news-card rounded-lg shadow-md overflow-hidden bg-white">
+                <div class="relative h-48 overflow-hidden">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/example3" title="Awards Ceremony" frameborder="0" allowfullscreen></iframe>
+                    <div class="absolute bottom-0 left-0 bg-secondary text-white text-xs px-3 py-1">
+                        Awards
+                    </div>
+                </div>
+                <div class="p-4">
+                    <h3 class="font-bold text-lg mb-2">Awards Ceremony Highlights</h3>
+                    <p class="text-gray-600 text-sm">Join us in celebrating our achievements at the annual awards ceremony.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
-<!-- Our News Section -->
-<section class="py-16 bg-white">
-<div class="container mx-auto px-4">
-<h2 class="text-3xl font-bold text-gray-900 mb-12">Our News</h2>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-<div class="news-card rounded-lg shadow-md overflow-hidden bg-white">
-<div class="h-48 overflow-hidden">
-<img src="https://readdy.ai/api/search-image?query=football%20player%20in%20blue%20jersey%20dribbling%20a%20ball%20on%20green%20field%2C%20action%20shot%2C%20professional%20sports%20photography%2C%20sunny%20day&width=600&height=400&seq=news4&orientation=landscape" alt="Football News" class="w-full h-full object-cover object-top">
-</div>
-<div class="p-4">
-<h3 class="font-bold text-lg mb-2">New Training Techniques Implemented</h3>
-<p class="text-gray-600 text-sm">Our coaching staff has introduced innovative training methods to enhance player performance and technical skills.</p>
-</div>
-</div>
-<div class="news-card rounded-lg shadow-md overflow-hidden bg-white">
-<div class="h-48 overflow-hidden">
-<img src="https://readdy.ai/api/search-image?query=group%20of%20young%20athletes%20celebrating%20victory%2C%20holding%20trophy%2C%20joyful%20moment%2C%20professional%20sports%20photography%2C%20stadium%20background&width=600&height=400&seq=news5&orientation=landscape" alt="Football News" class="w-full h-full object-cover object-top">
-</div>
-<div class="p-4">
-<h3 class="font-bold text-lg mb-2">Summer Camp Registration Now Open</h3>
-<p class="text-gray-600 text-sm">Join our annual summer camp for young players aged 7-15. Develop skills, make friends, and enjoy the beautiful game.</p>
-</div>
-</div>
-<div class="news-card rounded-lg shadow-md overflow-hidden bg-white">
-<div class="h-48 overflow-hidden">
-<img src="https://readdy.ai/api/search-image?query=golden%20trophy%20cup%20on%20stadium%20field%20with%20spotlights%2C%20championship%20award%2C%20professional%20sports%20photography%2C%20dramatic%20lighting&width=600&height=400&seq=news6&orientation=landscape" alt="Football News" class="w-full h-full object-cover object-top">
-</div>
-<div class="p-4">
-<h3 class="font-bold text-lg mb-2">Club Facilities Expansion Announced</h3>
-<p class="text-gray-600 text-sm">We're excited to announce the upcoming expansion of our training facilities, including new pitches and state-of-the-art equipment.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
+<!--Video section End-->
+
 <!-- About Us Section -->
 <section class="py-16 bg-gray-50">
 <div class="container mx-auto px-4">
@@ -320,16 +293,16 @@ Awards
 <div class="absolute bottom-6 left-6 right-6">
 <div class="grid grid-cols-3 gap-4">
 <div class="bg-white/10 backdrop-blur-sm p-4 rounded-lg text-center text-white">
-<div class="text-3xl font-bold mb-1">1923</div>
+<div class="text-3xl font-bold mb-1">2024</div>
 <div class="text-sm">Founded</div>
 </div>
 <div class="bg-white/10 backdrop-blur-sm p-4 rounded-lg text-center text-white">
-<div class="text-3xl font-bold mb-1">15+</div>
+<div class="text-3xl font-bold mb-1">5+</div>
 <div class="text-sm">Trophies</div>
 </div>
 <div class="bg-white/10 backdrop-blur-sm p-4 rounded-lg text-center text-white">
-<div class="text-3xl font-bold mb-1">5000+</div>
-<div class="text-sm">Members</div>
+<div class="text-3xl font-bold mb-1">10+</div>
+<div class="text-sm">Team Staffs</div>
 </div>
 </div>
 </div>
@@ -338,7 +311,7 @@ Awards
 <div class="md:w-1/2">
 <h2 class="text-4xl font-bold text-gray-900 mb-6">Our Legacy of Excellence</h2>
 <div class="space-y-6 text-gray-600">
-<p>Founded in 1923, Hermitage Football Club has been a cornerstone of sporting excellence and community spirit. Our commitment to developing young talent and promoting the beautiful game has made us one of the most respected football institutions in the region.</p>
+<p>Founded in 2024, Hermitage Football Club has been a cornerstone of sporting excellence and community spirit. Our commitment to developing young talent and promoting the beautiful game has made us one of the most respected football institutions in the region.</p>
 <p>We pride ourselves on our state-of-the-art facilities, professional coaching staff, and comprehensive youth development program. Our mission is to nurture not just skilled athletes, but well-rounded individuals who embody the values of sportsmanship, teamwork, and dedication.</p>
 <div class="grid grid-cols-2 gap-6 mt-8">
 <div class="bg-white p-6 rounded-lg shadow-md">
